@@ -29,7 +29,7 @@ mvn package
 ```
 Cuando ya el proyecto ha compilado, puede proceder a ejecutarlo, use el siguiente comando sobre el directorio Introduccion-AREP
 ```
-java -cp target/mi-primera-app-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.App
+java -cp target/Introduccion-AREP-1.0-SNAPSHOT.jar edu.escuelaing.arem.ASE.app.App
 ```
 ## Ejecución de pruebas
 Para correr las pruebas debe usar el siguiente comando
