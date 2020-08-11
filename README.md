@@ -2,9 +2,9 @@
 Tarea Introduccion MVN-GIT de Arquitectura Empresarial
 
 ## Pre-requisitos
-* Maven : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
-* Git : Sistema de control de versiones.
-* JDK : Herramienta de Desarrollo para Java 
+* [Maven](https://maven.apache.org/) : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
+* [Git](https://git-scm.com/) : Sistema de control de versiones.
+* [JDK](https://www.oracle.com/technetwork/es/java/javase/downloads/index.html) : Herramienta de Desarrollo para Java 
 
 Es importante verificar que usted cuente con los siguientes programas 
 ```
@@ -37,8 +37,8 @@ Para correr las pruebas debe usar el siguiente comando
 mvn test
 ```
 ## Construido con
-* Maven : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
-* Git : Sistema de control de versiones.
+* [Maven](https://maven.apache.org/) : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
+* [Git](https://git-scm.com/) : Sistema de control de versiones.
 * Java : Lenguaje de Programación.
 ## Autor
 * **Andrés Rocha** - [andresro30](https://github.com/andresro30)
