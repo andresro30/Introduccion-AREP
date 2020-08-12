@@ -44,4 +44,4 @@ mvn test
 * **Andrés Rocha** - [andresro30](https://github.com/andresro30)
 
 ## Licencia 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este proyecto está licenciado por Apache License 2.0 - mira aquí [LICENSE.md](LICENSE.md) los detalles
