@@ -1,38 +1,45 @@
 package edu.escuelaing.arem.ASE.app;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
+
+    @Test
+    public void deberiaCalcularDev()
     {
-        super( testName );
+        LinkedList data = new LinkedList(new String[]{"0.4", "0.7", "1.0", "2.1", "2.3", "4.0"});
+        LinkedList dataDos  = new LinkedList(new String[]{"186","699","132","272","291","331","199","1890","788","1601"});
+        LinkedList dataTres = new LinkedList(new String[]{"100","130","138","155","180","104","110","115"});
+
+        Double valor = data.devEstandar();
+        Double valorDos = dataDos.devEstandar();
+        Double valorTres = dataTres.devEstandar();
+
+        assertEquals(valor,new Double(1.3397761006974263));
+        assertEquals(valorDos,new Double(625.6339806770231));
+        assertEquals(valorTres,new Double(27.728273347923107));
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
+    @Test
+    public void deberiaCalcularMedia()
     {
-        return new TestSuite( AppTest.class );
-    }
+        LinkedList data = new LinkedList(new String[]{"0.4", "0.7", "1.0", "2.1", "2.3", "4.0"});
+        LinkedList dataDos  = new LinkedList(new String[]{"186","699","132","272","291","331","199","1890","788","1601"});
+        LinkedList dataTres = new LinkedList(new String[]{"100","130","138","155","180","104","110","115"});
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        Double valor = data.media();
+        Double valorDos = dataDos.media();
+        Double valorTres = dataTres.media();
+
+        assertEquals(valor,new Double(1.75));
+        assertEquals(valorDos,new Double(638.9));
+        assertEquals(valorTres,new Double(129.0));
     }
 }

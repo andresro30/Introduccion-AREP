@@ -6,15 +6,16 @@ package edu.escuelaing.arem.ASE.app;
  */
 public class Nodo {
 
-    private int valor;
+    private double valor;
     private Nodo anterior;
     private Nodo sucesor;
 
 
     /**
+     * Constructor de la clase Nodo
      * @param valor
      */
-    public Nodo(int valor) {
+    public Nodo(double valor) {
         this.valor = valor;
         anterior = null;
         sucesor = null;
@@ -22,7 +23,8 @@ public class Nodo {
 
 
     /**
-     * @return
+     * Método que retorna el sucesor
+     * @return Nodo
      */
     public Nodo getSucesor() {
         return sucesor;
@@ -30,7 +32,8 @@ public class Nodo {
 
 
     /**
-     * @param sucesor
+     * Método que modifica el sucesor
+     * @param sucesor tipo Nodo
      */
     public void setSucesor(Nodo sucesor) {
         this.sucesor = sucesor;
@@ -38,30 +41,34 @@ public class Nodo {
 
 
     /**
-     * @return
+     * Método que retorna el nodo anterior
+     * @return Nodo
      */
     public Nodo getAnterior() {
         return anterior;
     }
 
     /**
-     * @param anterior
+     * Método que modifica el nodo anterior
+     * @param anterior de tipo Nodo
      */
     public void setAnterior(Nodo anterior) {
         this.anterior = anterior;
     }
 
     /**
-     * @return
+     * Método que retorna el valor del nodo
+     * @return double
      */
-    public int getValor() {
+    public double getValor() {
         return valor;
     }
 
     /**
-     * @param valor
+     * Método que modifica el valor del nodo
+     * @param valor de tipo double
      */
-    public void setValor(int valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }

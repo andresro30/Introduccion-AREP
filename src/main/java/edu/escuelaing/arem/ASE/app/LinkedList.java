@@ -11,34 +11,61 @@ public class LinkedList {
     private Nodo head;
     private Nodo tale;
 
+    /**
+     * Constructor de la clase LinkedList
+     *
+     * @param data de tipo String[]
+     */
     public LinkedList(String[] data) {
         datos = new ArrayList<Nodo>();
         head = null;
         tale = null;
 
         for (String numero : data) {
-            datos.add(new Nodo(Integer.parseInt(numero)));
+            datos.add(new Nodo(Double.parseDouble(numero)));
         }
     }
 
+    /**
+     * Método que returna el head
+     *
+     * @return Nodo
+     */
     public Nodo getHead() {
         return head;
     }
 
+    /**
+     * Método que returna el tale
+     *
+     * @return Nodo
+     */
     public Nodo getTale() {
         return tale;
     }
 
+    /**
+     * Método que modifica el head
+     *
+     * @param head de tipo Nodo
+     */
     public void setHead(Nodo head) {
         this.head = head;
     }
 
+    /**
+     * Método que modifica el tale
+     *
+     * @param tale de tipo Nodo
+     */
     public void setTale(Nodo tale) {
         this.tale = tale;
     }
 
     /**
-     * @param nodo
+     * Método encargado de agergar un nuevo nodo
+     *
+     * @param nodo de tipo Nodo
      */
     public void add(Nodo nodo) {
         if (datos.isEmpty()) {
@@ -55,7 +82,9 @@ public class LinkedList {
     }
 
     /**
-     * @param nodo
+     * Método encargado de eliminar un nodo
+     *
+     * @param nodo de tpo Nodo
      */
     public void remove(Nodo nodo) {
         if (datos.contains(nodo)) {
@@ -75,6 +104,8 @@ public class LinkedList {
 
 
     /**
+     * Método encargado de calcular la media de los datos del LinkedList
+     *
      * @return double
      */
     public double media() {
@@ -88,6 +119,8 @@ public class LinkedList {
     }
 
     /**
+     * Método encargado de calcular la desviación estándar de los datos del LinkedList
+     *
      * @return double
      */
     public double devEstandar() {
