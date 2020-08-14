@@ -1,5 +1,7 @@
 # Introduccion-AREP
-Tarea Introduccion MVN-GIT de Arquitectura Empresarial
+Calculadora estadística con las funciones de media y desviación estándar de un grupo de números reales. 
+
+Para usar esta calculadora puedes entrar el archivo "datos.txt" presente en el repositorio, allí podrás poner el conjunto de números que quieres operar. Solo debes escribir los números separados por comas(",") y usar un punto(".") para separar la parte natural y fraccionaria del número.
 
 ## Pre-requisitos
 * [Maven](https://maven.apache.org/) : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
@@ -7,15 +9,19 @@ Tarea Introduccion MVN-GIT de Arquitectura Empresarial
 * [JDK](https://www.oracle.com/technetwork/es/java/javase/downloads/index.html) : Herramienta de Desarrollo para Java 
 
 Es importante verificar que usted cuente con los siguientes programas 
+* Versión de Maven:
 ```
 mvn -version
 ```
+* Versión de Git:
 ```
 git --version
 ```
+* Versión del JDK:
 ```
 java -version
 ```
+
 
 ## Instalación
 Para instalar el programa debe descargar el repositorio usando el siguiente comando desde su consola CMD
