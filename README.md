@@ -42,6 +42,10 @@ Para correr las pruebas debe usar el siguiente comando
 ```
 mvn test
 ```
+En esta imagen se puede observar que las pruebas diseñadas para verificar el funcionamiento del programa pasan.
+
+![](https://github.com/andresro30/Introduccion-AREP/blob/master/images/pruebas.PNG)
+
 ## Construido con
 * [Maven](https://maven.apache.org/) : Herramienta encargada de la construcción del proyecto y el manejo de dependencias
 * [Git](https://git-scm.com/) : Sistema de control de versiones.
